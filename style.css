@@ -1,0 +1,73 @@
+   /* Custom styles for message bubbles */
+   .chat-messages {
+       display: flex;
+       flex-direction: column;
+       min-height: 200px; /* Minimum height for the chat area */
+       max-height: 400px; /* Maximum height before scrolling */
+   }
+
+
+   .message-bubble {
+       padding: 0.75rem 1rem;
+       border-radius: 0.75rem;
+       max-width: 80%;
+       word-wrap: break-word;
+       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+   }
+
+
+   .user-message {
+       background-color: #e0f2fe; /* Light blue for user messages */
+       color: #1e40af; /* Darker blue text */
+       align-self: flex-end; /* Align to the right */
+       border-bottom-right-radius: 0.25rem; /* Sharper corner on one side */
+   }
+
+
+   .bot-message {
+       background-color: #f0f9ff; /* Very light blue for bot messages */
+       color: #0c4a6e; /* Darker blue-gray text */
+       align-self: flex-start; /* Align to the left */
+       border-bottom-left-radius: 0.25rem; /* Sharper corner on one side */
+   }
+
+
+   /* Scrollbar styling (optional, for better aesthetics) */
+   .chat-messages::-webkit-scrollbar {
+       width: 8px;
+   }
+
+
+   .chat-messages::-webkit-scrollbar-track {
+       background: #f1f1f1;
+       border-radius: 10px;
+   }
+
+
+   .chat-messages::-webkit-scrollbar-thumb {
+       background: #888;
+       border-radius: 10px;
+   }
+
+
+   .chat-messages::-webkit-scrollbar-thumb:hover {
+       background: #555;
+   }
+
+
+   /* Ensure the container fits well in the iframe */
+   html, body {
+       height: 100%;
+       margin: 0;
+       padding: 0;
+       overflow: hidden; /* Prevent scrollbars on the body */
+   }
+
+
+   .chat-container {
+       height: 100%; /* Make the container fill the iframe height */
+       width: 100%; /* Make the container fill the iframe width */
+       max-width: none; /* Override Tailwind's max-width for full iframe fill */
+       max-height: none; /* Override Tailwind's max-height */
+   }
+  
