@@ -7,7 +7,7 @@
        // --- IMPORTANT: Backend URL ---
        // This is the URL of your Glitch project's backend endpoint.
        // Replace with your actual Glitch project URL (e.g., https://your-glitch-project.glitch.me/chat)
-       const BACKEND_CHAT_URL = "https://your-glitch-project-name.glitch.me/chat"; // REPLACE THIS LATER!
+       const BACKEND_CHAT_URL = "https://flagchrome-ai-assistant.onrender.com/chat"; // REPLACE THIS LATER!
 
 
        // Function to add a message to the chat display
